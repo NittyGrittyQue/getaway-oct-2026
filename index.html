@@ -207,6 +207,15 @@
   .chip-free{background:#e2f3ec;color:var(--good)}
   .chip-skip{background:#fae6e4;color:var(--bad)}
   .todo-skip{background:#fffaf9;border-color:#eccfcb}
+
+  .mini-todo{margin:14px 0 0;padding:13px 14px;background:var(--sand);border-radius:10px}
+  .mini-todo h4{margin:0 0 8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);font-weight:800}
+  .mini-todo ul{list-style:none;margin:0;padding:0}
+  .mini-todo li{display:flex;justify-content:space-between;gap:12px;font-size:14px;
+    padding:5px 0;border-bottom:1px dotted #ded2c0}
+  .mini-todo li:last-child{border-bottom:0}
+  .mini-todo li b{color:var(--deep);white-space:nowrap;font-weight:700}
 </style>
 </head>
 <body>
@@ -248,7 +257,8 @@
     <div class="todo">
       <span class="chip chip-free">Included</span>
       <h3>The spa, which you asked about</h3>
-      <p>Naay Spa is a five minute walk, open 8 to 8 every day, and it is indoors so rain does not touch it. <strong>The All &amp; More Inclusive rate covers massages, facials and body scrubs</strong>, so the basic version of what you asked for is already paid for. The upgrade is the hydrotherapy circuit and a clay ritual for two: an hour of sauna, eucalyptus steam, a Scottish shower and hot and cold plunge pools, then a sea salt scrub and a clay wrap. That tier runs about <strong>$400 to $650 for two</strong>. Book it for a rainy afternoon, not a clear morning.</p>
+      <p>Here is the part I did not know when I built this page. <strong>There is an overwater spa at the end of our own pier.</strong> Four treatment suites out over the water at the far end of the Palafitos section, and you can have the massage <strong>with the windows open</strong> so you hear the ocean underneath you the whole time. That is a couples massage over the Caribbean, forty steps from our own door.</p>
+      <p style="margin-top:10px">The <strong>All &amp; More Inclusive rate already covers massages, facials and body scrubs</strong>, and the hydrotherapy circuit is complimentary before any booked treatment: sauna, eucalyptus steam, a Scottish shower, hot and cold plunge pools, then juices. The paid upgrade is a signature ritual for two, roughly <strong>$400 to $650</strong>. Ask for the overwater suite specifically when we book, and put it in an afternoon so a rainy hour costs us nothing.</p>
     </div>
 
     <div class="todo">
@@ -285,6 +295,18 @@
       <span class="chip">$80 to $170</span>
       <h3>Dinner in Puerto Morelos</h3>
       <p>A working fishing town of about ten thousand that never got the Playa del Carmen treatment. One small square, a handicrafts market, a crooked lighthouse a 1967 hurricane knocked off plumb that the town decided to leave standing, and seafood places where the catch came in that morning. Fifteen minutes north. October empties it out, which makes it better.</p>
+    </div>
+
+    <div class="todo">
+      <span class="chip">Planning</span>
+      <h3>Which days are actually free</h3>
+      <p><strong>Thursday is gone and Sunday is gone.</strong> Thursday we fly four hours, clear immigration at Cancun and transfer forty minutes, and we will want that first evening on the deck doing nothing. Sunday we have to be at the airport three hours before an international flight. <strong>That leaves Friday and Saturday.</strong> My honest advice is to use one of them and stay on property for the other. Tulum Friday at the 8 a.m. gate, reef or sunset sail Saturday, spa in whichever afternoon it rains.</p>
+    </div>
+
+    <div class="todo todo-skip">
+      <span class="chip chip-skip">Skip it</span>
+      <h3>Whale sharks and Xcaret</h3>
+      <p><strong>Whale shark season is closed.</strong> Mexico's legal window for 2026 ran June 15 to September 15 and operators stopped around the 17th. By October 1 there are no legal tours, so if anyone offers one it is not a licensed operation. And Xcaret is $378 for the two of us for a theme park with wristbands, lines, buffets and a two hour show. It is impressive and it is the least romantic possible way to spend an anniversary day.</p>
     </div>
 
     <div class="todo todo-skip">
@@ -348,7 +370,7 @@
         <div class="price"><div class="l">Estimated total, all in</div><div class="n">$3,500 to $4,200</div></div>
         <p class="note">Thatched villas over clear shallow water on the quiet south end, far from the high rise strip. Hardwood decks, ladders into the sea. <strong>Aruba sits outside the hurricane belt,</strong> so early October there is just a normal beach week instead of a gamble. Cheapest of the good ones.</p>
         <span class="tag t-good">Best weather odds</span><span class="tag t-good">Lowest price</span><span class="tag t-warn">O'Hare only</span>
-        <div class="fb"><label for="c-aruba">Your take</label><textarea id="c-aruba" data-fb="Aruba Ocean Villas" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <div class="mini-todo"><h4>Things to do</h4><ul><li><span>Private overwater dining cabana at The Old Man and The Sea</span><b>$180 to $300</b></li><li><span>Morning sail and snorkel over the Antilla shipwreck</span><b>$196</b></li><li><span>Sunset catamaran</span><b>$118</b></li></ul></div><div class="fb"><label for="c-aruba">Your take</label><textarea id="c-aruba" data-fb="Aruba Ocean Villas" placeholder="Yes, no, maybe. Anything."></textarea></div>
         <a class="btn" href="https://www.arubaoceanvillas.com/overwater-villas">See the villas</a>
       </div>
     </div>
@@ -368,7 +390,7 @@
         <div class="price"><div class="l">Estimated total, all in</div><div class="n">$3,600 to $6,200</div></div>
         <p class="note">Fifteen overwater bungalows on a private island inside the barrier reef. Genuinely beautiful, and the one we originally saw. <strong>But October is Belize's wettest month, about ten inches of rain, at the peak of hurricane season,</strong> and reef boat trips get cancelled. This is a February trip, not an October one.</p>
         <span class="tag t-bad">Worst month</span><span class="tag t-bad">Two travel days</span>
-        <div class="fb"><label for="c-thatch">Your take</label><textarea id="c-thatch" data-fb="Thatch Caye, Belize" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <div class="mini-todo"><h4>Things to do</h4><ul><li><span>Private candlelit dinner in the Honeymoon Palapa, one table, over the water</span><b>in the package</b></li><li><span>Oceanside couples massage at Serenity Point or on your own deck</span><b>published rates</b></li><li><span>Guided barrier reef snorkel, two drops</span><b>$160 to $250</b></li></ul></div><div class="fb"><label for="c-thatch">Your take</label><textarea id="c-thatch" data-fb="Thatch Caye, Belize" placeholder="Yes, no, maybe. Anything."></textarea></div>
         <a class="btn" href="https://thatchcayebelize.com/">See the island</a>
       </div>
     </div>
@@ -388,7 +410,7 @@
         <div class="price"><div class="l">Estimated total, all in</div><div class="n">$2,750 to $3,200</div></div>
         <p class="note">Ten bungalows on stilts over a turquoise lagoon, glass floor panel, private sundeck, hammock hanging over the water. <strong>By far the cheapest real overwater bungalow on this list.</strong> The catch is two of our three days go to airports, and the vibe is rustic barefoot rather than luxury.</p>
         <span class="tag t-good">Cheapest overall</span><span class="tag t-warn">Rustic</span><span class="tag t-bad">Two travel days</span>
-        <div class="fb"><label for="c-azul">Your take</label><textarea id="c-azul" data-fb="Azul Paradise, Panama" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <div class="mini-todo"><h4>Things to do</h4><ul><li><span>Full day boat trip to Cayos Zapatillas</span><b>$80 to $140 shared</b></li><li><span>Dive or snorkel Tiger Rock</span><b>$160 to $220</b></li></ul></div><div class="fb"><label for="c-azul">Your take</label><textarea id="c-azul" data-fb="Azul Paradise, Panama" placeholder="Yes, no, maybe. Anything."></textarea></div>
         <a class="btn" href="https://azulparadise.com/villas-and-bungalows/">See the bungalows</a>
       </div>
     </div>
@@ -407,7 +429,7 @@
         <div class="price"><div class="l">Estimated total, all in</div><div class="n">$11,500 to $14,000</div></div>
         <p class="note">A bungalow floating at the end of a 150 foot dock with its own butler and sailboat. Honestly <strong>the best property on this entire page.</strong> It is also the worst possible month to go, so my advice is to keep this one in our back pocket for February or March and give it five or six nights instead of three.</p>
         <span class="tag t-good">Most special</span><span class="tag t-bad">Wrong month</span>
-        <div class="fb"><label for="c-cayo">Your take</label><textarea id="c-cayo" data-fb="Cayo Espanto, Belize" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <div class="mini-todo"><h4>Things to do</h4><ul><li><span>Private snorkel charter to Hol Chan and Shark Ray Alley, just the two of you</span><b>about $478</b></li><li><span>The Couples Escape spa package, delivered to your villa</span><b>about $698</b></li></ul></div><div class="fb"><label for="c-cayo">Your take</label><textarea id="c-cayo" data-fb="Cayo Espanto, Belize" placeholder="Yes, no, maybe. Anything."></textarea></div>
         <a class="btn" href="https://aprivateisland.com/rates/">See the island</a>
       </div>
     </div>
@@ -426,7 +448,7 @@
         <div class="price"><div class="l">Estimated total, all in</div><div class="n">$7,100 to $7,900</div></div>
         <p class="note">Beautiful bungalows and you get run of three Sandals resorts on the island. <strong>The problem is purely arithmetic:</strong> with a connection each way, two of our three days become travel days. Worth it for a week. Not worth it for three nights.</p>
         <span class="tag t-good">Full butler</span><span class="tag t-bad">Bad flight math</span>
-        <div class="fb"><label for="c-stlucia">Your take</label><textarea id="c-stlucia" data-fb="Sandals St. Lucian" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <div class="mini-todo"><h4>Things to do</h4><ul><li><span>Catamaran day sail down the coast to the Pitons</span><b>$290</b></li><li><span>Private candlelit dinner on the beach at the resort</span><b>$199</b></li><li><span>Sunset sail from Rodney Bay Marina</span><b>$150</b></li></ul></div><div class="fb"><label for="c-stlucia">Your take</label><textarea id="c-stlucia" data-fb="Sandals St. Lucian" placeholder="Yes, no, maybe. Anything."></textarea></div>
         <a class="btn" href="https://www.sandals.com/grande-st-lucian/">See the resort</a>
       </div>
     </div>
@@ -445,7 +467,7 @@
         <div class="price"><div class="l">Estimated total, all in</div><div class="n">$11,500 to $13,500</div></div>
         <p class="note">The newest and arguably the nicest overwater villas Sandals has built, two full stories out over the water. <strong>Also the hardest to get to on the whole list.</strong> Two connections each way means we would spend more time in airports than in the villa.</p>
         <span class="tag t-good">Newest villas</span><span class="tag t-bad">Two full travel days</span>
-        <div class="fb"><label for="c-stvincent">Your take</label><textarea id="c-stvincent" data-fb="Sandals St. Vincent" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <div class="mini-todo"><h4>Things to do</h4><ul><li><span>Private candlelight dinner for two on the sand</span><b>$199</b></li><li><span>Lover's Rock sunset catamaran up the leeward coast</span><b>$213</b></li><li><span>Mustique and Bequia island hopping</span><b>$766</b></li></ul></div><div class="fb"><label for="c-stvincent">Your take</label><textarea id="c-stvincent" data-fb="Sandals St. Vincent" placeholder="Yes, no, maybe. Anything."></textarea></div>
         <a class="btn" href="https://www.sandals.com/saint-vincent/">See the resort</a>
       </div>
     </div>
