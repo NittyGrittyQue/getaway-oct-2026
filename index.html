@@ -216,6 +216,18 @@
     padding:5px 0;border-bottom:1px dotted #ded2c0}
   .mini-todo li:last-child{border-bottom:0}
   .mini-todo li b{color:var(--deep);white-space:nowrap;font-weight:700}
+
+  .replies{background:#fff;border:1px solid var(--line);border-radius:16px;
+    padding:30px 26px;margin:26px 0 0}
+  .replies h2{margin:0 0 6px;font-size:26px}
+  .rsub{color:var(--muted);margin:0 0 22px;font-size:15px}
+  .r{border-top:1px solid var(--line);padding:16px 0}
+  .r:first-of-type{border-top:0;padding-top:0}
+  .rq{font-style:italic;color:var(--teal);font-weight:600;font-size:15.5px;margin-bottom:7px}
+  .ra{font-size:15.5px;color:#33454a;line-height:1.65}
+  .ra strong{color:var(--ink)}
+  .ra a{color:var(--teal);font-weight:700;text-decoration:none;white-space:nowrap}
+  .ra a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -238,12 +250,48 @@
   </div>
 </div>
 
+
+<div class="wrap">
+  <div class="replies">
+    <h2>Everything you said, answered</h2>
+    <p class="rsub">You wrote me eight things. Here is where each one landed.</p>
+
+    <div class="r"><div class="rq">&ldquo;I am drawn to: Palafitos, Riviera Maya&rdquo;</div>
+      <div class="ra"><strong>Done. That is the trip.</strong> This whole page is built around it now. Everything else is still here if you want to look, but I am planning this one.</div></div>
+
+    <div class="r"><div class="rq">&ldquo;really wanted the over water bungalow&rdquo;</div>
+      <div class="ra">You get an actual one. Over 800 square feet on stilts, a glass panel in the floor, your own plunge pool on the deck, and a ladder off the deck into the Caribbean. <strong>These are the only true overwater bungalows in Mexico.</strong></div></div>
+
+    <div class="r"><div class="rq">&ldquo;an inclusive with the bungalows and can use SW&rdquo;</div>
+      <div class="ra">Both right. It is <strong>All &amp; More Inclusive</strong>, and <strong>Southwest flies Midway to Cancun nonstop</strong>, about three hours forty. The round trip airport shuttle is included too, so no rental car and no transfer to book.</div></div>
+
+    <div class="r"><div class="rq">&ldquo;What would make it perfect: spa or massage&rdquo;</div>
+      <div class="ra">This turned out better than I expected. <strong>There is an overwater spa at the end of our own pier</strong>, four treatment suites, and you can ask them to open the windows so you hear the water underneath you. Massages are already covered by the rate. <a href="#spa">See the spa &rarr;</a></div></div>
+
+    <div class="r"><div class="rq">&ldquo;are there websites can book hotel and do payments instead of paying in full&rdquo;</div>
+      <div class="ra"><strong>Yes, though not the way most people do it.</strong> The regular vacation layaway plans all closed 45 days out and we missed that. But you can pick <strong>Affirm right at checkout</strong> on the resort site, possibly nothing down, or use pay over time on the Chase or Amex card. <a href="#pay">See how we pay &rarr;</a></div></div>
+
+    <div class="r"><div class="rq">&ldquo;On the money: Want to talk about it&rdquo;</div>
+      <div class="ra">Let us. Here is the honest number so you are not surprised: <strong>$4,860 to $5,230 all in</strong> for the two of us. That is higher than the range I first showed you, because I was working off a starting price and the real published rate is $1,319 a night. If we finance it, the money leaving this week could be close to nothing. <a href="#pay">See the breakdown &rarr;</a></div></div>
+
+    <div class="r"><div class="rq">&ldquo;Dates: dates are good&rdquo;</div>
+      <div class="ra">Good, because I checked and <strong>they hold.</strong> I was worried the Sunday flight home might not exist, since one source said that route only runs Monday through Friday. It was wrong. Southwest runs <strong>two nonstops on Sunday</strong>. October 1 out and October 4 back both work.</div></div>
+
+    <div class="r"><div class="rq">&ldquo;Dealbreakers: no&rdquo;</div>
+      <div class="ra">Then there is exactly one thing standing between us and this trip: <strong>whether a bungalow is actually free those nights.</strong> No website will tell me, so I am calling them tomorrow. And there is a clock, we have until about <strong>September 9</strong> to book while it is still free to cancel. <a href="#pay">Why the date matters &rarr;</a></div></div>
+
+    <div class="r"><div class="rq">&ldquo;Palafitos: yes&rdquo; and the things to do</div>
+      <div class="ra">You asked what there is to do, so I found it all and threw out what did not check out. Sunrise off our own ladder, the reef fifteen minutes up the road, cenotes, Tulum at the 8 a.m. gate. <a href="#todo">See the list &rarr;</a></div></div>
+
+  </div>
+</div>
+
 <div class="wrap">
 
 <section>
   <div class="sec-head">
     <span class="sec-num">You asked what there is to do</span>
-    <h2>Two days in the Riviera Maya</h2>
+    <h2 id="todo">Two days in the Riviera Maya</h2>
     <p class="sub">Everything below was checked twice. Prices are per couple. The ones marked included cost nothing extra.</p>
   </div>
 
@@ -256,7 +304,7 @@
 
     <div class="todo">
       <span class="chip chip-free">Included</span>
-      <h3>The spa, which you asked about</h3>
+      <h3 id="spa">The spa, which you asked about</h3>
       <p>Here is the part I did not know when I built this page. <strong>There is an overwater spa at the end of our own pier.</strong> Four treatment suites out over the water at the far end of the Palafitos section, and you can have the massage <strong>with the windows open</strong> so you hear the ocean underneath you the whole time. That is a couples massage over the Caribbean, forty steps from our own door.</p>
       <p style="margin-top:10px">The <strong>All &amp; More Inclusive rate already covers massages, facials and body scrubs</strong>, and the hydrotherapy circuit is complimentary before any booked treatment: sauna, eucalyptus steam, a Scottish shower, hot and cold plunge pools, then juices. The paid upgrade is a signature ritual for two, roughly <strong>$400 to $650</strong>. Ask for the overwater suite specifically when we book, and put it in an afternoon so a rainy hour costs us nothing.</p>
     </div>
@@ -709,7 +757,7 @@
 <section>
   <div class="sec-head">
     <span class="sec-num">You asked about paying</span>
-    <h2>How we actually pay for it</h2>
+    <h2 id="pay">How we actually pay for it</h2>
     <p class="sub">Your question was whether we can put something down and pay the rest over time. Short answer: yes, but not the usual way.</p>
   </div>
 
