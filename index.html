@@ -163,6 +163,24 @@
   .fb-note{font-size:13.5px;color:var(--muted);margin:16px 0 0;text-align:center}
   @media print{.fb,.send,.saved{display:none}
     .fb-sec{border-style:dashed}}
+
+  .b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8{}
+  .c1{background:linear-gradient(120deg,#0b5f7a,#2f97b5 55%,#9ad8e6)}
+  .c2{background:linear-gradient(120deg,#0a7d86,#2fc0c0 55%,#a6ecdf)}
+  .c3{background:linear-gradient(120deg,#12556e,#2e8fa8 55%,#95cfdd)}
+  .c4{background:linear-gradient(120deg,#0f6f5e,#31a98d 55%,#a5e3c4)}
+  .c5{background:linear-gradient(120deg,#164a6b,#2d80a6 55%,#8fc8de)}
+  .c6{background:linear-gradient(120deg,#3c4b74,#6f81ac 60%,#bcc6e0)}
+  .datebox{background:#fff6e6;border:1px solid #e8d5a8;border-left:5px solid var(--gold);
+    border-radius:12px;padding:20px 22px}
+  .datebox h3{margin:0 0 8px;font-size:18px}
+  .datebox p{margin:0;font-size:15.5px}
+  .verdict{background:linear-gradient(165deg,#07303a,#0f6d7d);color:#fff;
+    border-radius:16px;padding:30px 26px;margin-top:34px}
+  .verdict h3{margin:0 0 14px;font-size:21px;color:var(--gold)}
+  .verdict p{color:#daeef1;margin:0 0 14px;font-size:15.5px}
+  .verdict p:last-child{margin-bottom:0}
+  .verdict strong{color:#fff}
 </style>
 </head>
 <body>
@@ -386,11 +404,170 @@
   <div class="sec-head">
     <span class="sec-num">Option Set 2</span>
     <h2>We cruise</h2>
-    <p class="sub">Same treatment, same honesty, still being researched.</p>
+    <p class="sub">Cheaper than every land option, but read the date note first.</p>
   </div>
-  <div class="pending">
-    <h3>Cruise options are still being pulled</h3>
-    <p>I have eight researchers working through the October 2026 sailing calendars, the Chicago flights to each port, hurricane rerouting policies, and the true all in cost per couple. Including whether we can book an overwater cabana on a private island as a day. This section fills in shortly.</p>
+  <div class="datebox">
+    <h3>First, the honest problem with our dates</h3>
+    <p>Almost every 3 night cruise sails <strong>Friday to Monday</strong>. October 1 is a Thursday. So most of the good ones want us to slide one day, leaving <strong>Friday October 2 and coming home Monday October 5</strong>. That costs one Monday off work. There is exactly one 3 night cruise that sails our exact dates, and it is the first card below.</p>
+  </div>
+
+  <div class="cards" style="margin-top:22px">
+
+    <div class="card pick">
+      <div class="band c1"><span>Port Canaveral &middot; 3 nights</span></div>
+      <div class="body">
+        <span class="badge">Our exact dates</span>
+        <h3>MSC Seashore</h3>
+        <p class="prop">Thu Oct 1 &rarr; Sun Oct 4 &middot; Nassau + Ocean Cay</p>
+        <ul class="facts">
+          <li><b>Leaves</b><span>Thu Oct 1, 5:00 PM</span></li>
+          <li><b>Back</b><span>Sun Oct 4, 7:00 AM</span></li>
+          <li><b>Fly from</b><span>Midway to Orlando</span></li>
+          <li><b>Nonstops a day</b><span>6 to 8</span></li>
+          <li><b>Overwater</b><span>None</span></li>
+        </ul>
+        <div class="price"><div class="l">Cruise fare for two, taxes in</div><div class="n">$500 to $740</div></div>
+        <p class="note"><strong>The only cruise in the world that sails our exact anniversary dates.</strong> No day off work, no shifting anything. Nassau on Friday, then Ocean Cay, MSC's private island in the Bahamas, on Saturday. Add about $102 in tips. It is also the cheapest thing on this entire page by a mile. The tradeoff is that Ocean Cay has no overwater anything.</p>
+        <span class="tag t-good">No date change</span><span class="tag t-good">Cheapest</span><span class="tag t-warn">No overwater</span>
+        <div class="fb"><label for="c-msc">Your take</label><textarea id="c-msc" data-fb="MSC Seashore" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://www.msccruisesusa.com/">See the ship</a>
+      </div>
+    </div>
+
+    <div class="card pick">
+      <div class="band c2"><span>Port Canaveral &middot; 3 nights</span></div>
+      <div class="body">
+        <span class="badge">The overwater one</span>
+        <h3>Utopia of the Seas</h3>
+        <p class="prop">Royal Caribbean &middot; Fri Oct 2 &rarr; Mon Oct 5</p>
+        <ul class="facts">
+          <li><b>Leaves</b><span>Fri Oct 2, 4:00 PM</span></li>
+          <li><b>Back</b><span>Mon Oct 5, 6:00 AM</span></li>
+          <li><b>Fly from</b><span>Midway to Orlando</span></li>
+          <li><b>CocoCay day</b><span>Sunday Oct 4</span></li>
+          <li><b>Overwater</b><span>Yes, a real one</span></li>
+        </ul>
+        <div class="price"><div class="l">Cruise fare for two, taxes in</div><div class="n">$2,420 to $2,620</div></div>
+        <p class="note">This is the one that actually gives you the overwater bungalow. On Sunday the ship docks at Perfect Day at CocoCay and you can book a <strong>Coco Beach Club Overwater Cabana</strong>. Only twenty of them exist in the entire Royal Caribbean fleet. 675 square feet standing out over the water, a private slide that drops you straight into the ocean, a hammock hanging over the water, your own wet bar and attendant. Priced per cabana, not per person.</p>
+        <span class="tag t-good">Real overwater cabana</span><span class="tag t-warn">One day shift</span><span class="tag t-warn">Big busy ship</span>
+        <div class="fb"><label for="c-utopia">Your take</label><textarea id="c-utopia" data-fb="Utopia of the Seas" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://www.royalcaribbean.com/cruise-ships/utopia-of-the-seas">See the ship</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band c3"><span>Fort Lauderdale &middot; 3 nights</span></div>
+      <div class="body">
+        <h3>Jewel of the Seas</h3>
+        <p class="prop">Royal Caribbean &middot; Fri Oct 2 &rarr; Mon Oct 5</p>
+        <ul class="facts">
+          <li><b>Ship size</b><span>2,100 guests</span></li>
+          <li><b>CocoCay day</b><span>Sunday Oct 4</span></li>
+          <li><b>Fly from</b><span>Midway to Fort Lauderdale</span></li>
+          <li><b>Nonstops a day</b><span>Only 1 useful morning one</span></li>
+          <li><b>Overwater</b><span>Yes, same cabana</span></li>
+        </ul>
+        <div class="price"><div class="l">Cruise fare for two, taxes in</div><div class="n">$930 to $1,230</div></div>
+        <p class="note"><strong>The same overwater cabana at CocoCay, on a ship a third the size, for less than half the fare.</strong> Utopia carries 5,668 people. This one carries 2,100, which means no waterslide crowds and a much more grown up feel. The catch is the flight. There is really only one useful morning nonstop from Midway to Fort Lauderdale, so we would fly in the night before.</p>
+        <span class="tag t-good">Same cabana, half price</span><span class="tag t-good">Quiet ship</span><span class="tag t-warn">Thin flights</span>
+        <div class="fb"><label for="c-jewel">Your take</label><textarea id="c-jewel" data-fb="Jewel of the Seas" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://www.royalcaribbean.com/cruise-ships/jewel-of-the-seas">See the ship</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band c4"><span>Port Canaveral &middot; 3 nights</span></div>
+      <div class="body">
+        <h3>Carnival Glory</h3>
+        <p class="prop">Fri Oct 2 &rarr; Mon Oct 5 &middot; Celebration Key</p>
+        <ul class="facts">
+          <li><b>Island day</b><span>Saturday Oct 3</span></li>
+          <li><b>Fly from</b><span>Midway to Orlando</span></li>
+          <li><b>Night before</b><span>Not needed</span></li>
+          <li><b>Adults only spot</b><span>Pearl Cove, 18+</span></li>
+          <li><b>Overwater</b><span>Over the lagoon</span></li>
+        </ul>
+        <div class="price"><div class="l">Cruise fare for two, taxes in</div><div class="n">$850 to $1,450</div></div>
+        <p class="note">Carnival's brand new private destination, Celebration Key, has <strong>Over-the-Lagoon Cabanas</strong> built out over the water, about $518 for the cabana for six hours. There is also Pearl Cove Beach Club, adults only, with a heated infinity pool. <strong>The quiet advantage here is we do not need to fly down the night before.</strong> Midway to Orlando runs six to eight times a day, so a morning flight still makes the ship comfortably.</p>
+        <span class="tag t-good">No extra hotel night</span><span class="tag t-good">Adults only beach club</span><span class="tag t-warn">Lagoon, not ocean</span>
+        <div class="fb"><label for="c-glory">Your take</label><textarea id="c-glory" data-fb="Carnival Glory" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://www.carnival.com/cruise-ships/carnival-glory">See the ship</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band c5"><span>Miami &middot; 3 nights</span></div>
+      <div class="body">
+        <h3>Norwegian Getaway</h3>
+        <p class="prop">Fri Oct 2 &rarr; Mon Oct 5 &middot; Great Stirrup Cay</p>
+        <ul class="facts">
+          <li><b>Island day</b><span>Sunday Oct 4</span></li>
+          <li><b>Fly from</b><span>Midway to Miami</span></li>
+          <li><b>Nonstops a day</b><span>About 1</span></li>
+          <li><b>Night before</b><span>Basically required</span></li>
+          <li><b>Overwater</b><span>Swings, not a cabana</span></li>
+        </ul>
+        <div class="price"><div class="l">Cruise fare for two, taxes in</div><div class="n">$518 to $758</div></div>
+        <p class="note"><strong>The most adults-only feeling of the mainstream ships.</strong> Vibe Beach Club onboard is 18 and over with its own bar and hot tubs, and Great Stirrup Cay has Silver Cove, a private lagoon area with overwater swings and a gazebo. Very cheap. The real problem is the flight: Midway to Miami is about one nonstop a day, so if it goes bad there is no recovery and the ship leaves without us.</p>
+        <span class="tag t-good">Best adults only</span><span class="tag t-good">Very cheap</span><span class="tag t-bad">Risky flight</span>
+        <div class="fb"><label for="c-ncl">Your take</label><textarea id="c-ncl" data-fb="Norwegian Getaway" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://www.ncl.com/cruise-ship/getaway">See the ship</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band c6"><span>Fort Lauderdale &middot; 4 nights</span></div>
+      <div class="body">
+        <h3>Disney Destiny</h3>
+        <p class="prop">Thu Oct 1 &rarr; Mon Oct 5 &middot; Castaway Cay</p>
+        <ul class="facts">
+          <li><b>Leaves</b><span>Thu Oct 1, 3:00 PM</span></li>
+          <li><b>Nights</b><span>4</span></li>
+          <li><b>Theme</b><span>Halloween on the High Seas</span></li>
+          <li><b>Adults only</b><span>Zones only</span></li>
+          <li><b>Overwater</b><span>None anywhere</span></li>
+        </ul>
+        <div class="price"><div class="l">Cabin for two, taxes in</div><div class="n">$2,242 to $3,282</div></div>
+        <p class="note">Newest ship in the Disney fleet and <strong>it actually leaves on our anniversary date.</strong> Nassau, then Castaway Cay with Serenity Bay, the adults only beach. The ship is decorated for Halloween the whole trip. Two honest problems: Disney has zero overwater anything anywhere in its fleet, and it is a family line, so we would be sharing the ship with a lot of kids.</p>
+        <span class="tag t-good">Leaves Oct 1</span><span class="tag t-warn">4 nights, not 3</span><span class="tag t-bad">No overwater</span>
+        <div class="fb"><label for="c-disney">Your take</label><textarea id="c-disney" data-fb="Disney Destiny" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://disneycruise.disney.go.com/">See the ship</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sec-head" style="margin-top:44px">
+    <h2 style="font-size:23px">The cruises side by side</h2>
+    <p class="sub">Swipe sideways. Gold columns are the two worth serious thought.</p>
+  </div>
+  <div class="scroller">
+    <table>
+      <thead>
+        <tr><th></th><th>MSC Seashore</th><th>Utopia</th><th>Jewel</th><th>Carnival Glory</th><th>NCL Getaway</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Leaves from</th><td class="hi">Port Canaveral</td><td class="hi">Port Canaveral</td><td>Fort Lauderdale</td><td>Port Canaveral</td><td>Miami</td></tr>
+        <tr><th>Our dates?</th><td class="hi">Yes, exactly</td><td class="hi">One day later</td><td>One day later</td><td>One day later</td><td>One day later</td></tr>
+        <tr><th>Sails</th><td class="hi">Thu Oct 1</td><td class="hi">Fri Oct 2</td><td>Fri Oct 2</td><td>Fri Oct 2</td><td>Fri Oct 2</td></tr>
+        <tr><th>Nights</th><td class="hi">3</td><td class="hi">3</td><td>3</td><td>3</td><td>3</td></tr>
+        <tr><th>Overwater</th><td class="hi">None</td><td class="hi">Cabana at CocoCay</td><td>Cabana at CocoCay</td><td>Over the lagoon</td><td>Overwater swings</td></tr>
+        <tr><th>Fly from Midway to</th><td class="hi">Orlando</td><td class="hi">Orlando</td><td>Fort Lauderdale</td><td>Orlando</td><td>Miami</td></tr>
+        <tr><th>Nonstops a day</th><td class="hi">6 to 8</td><td class="hi">6 to 8</td><td>1 useful</td><td>6 to 8</td><td>About 1</td></tr>
+        <tr><th>Hotel night before</th><td class="hi">Optional</td><td class="hi">Recommended</td><td>Recommended</td><td>Not needed</td><td>Required</td></tr>
+        <tr><th>Ship size</th><td class="hi">4,540</td><td class="hi">5,668</td><td>2,100</td><td>2,980</td><td>3,963</td></tr>
+        <tr><th>Fare for two</th><td class="hi">$500 to $740</td><td class="hi">$2,420 to $2,620</td><td>$930 to $1,230</td><td>$850 to $1,450</td><td>$518 to $758</td></tr>
+        <tr><th>Tips for two</th><td class="hi">$102</td><td class="hi">$111</td><td>$111</td><td>$102</td><td>$120</td></tr>
+        <tr><th>Best thing</th><td class="hi">Our exact dates, cheapest</td><td class="hi">The real overwater cabana</td><td>Same cabana, quiet ship</td><td>No extra hotel night</td><td>Most adult feeling</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="verdict">
+    <h3>My blunt read on cruising</h3>
+    <p><strong>A cruise is cheaper than every land option on this page, by a lot.</strong> Three nights on MSC Seashore for two of us is under $750 including taxes, against about $3,400 in room charges alone at Palafitos. Even the expensive Utopia is less than the bungalow.</p>
+    <p><strong>But a cruise cannot give you the actual dream.</strong> An overwater cabana at CocoCay is six or seven hours on a Sunday with a ship full of people a few hundred yards away. An overwater bungalow is three nights of waking up over the water with nobody around. Those are different things and I do not want to pretend otherwise.</p>
+    <p><strong>Where a cruise genuinely wins is weather.</strong> A resort sits still and takes whatever October sends it. A ship simply moves, so storms mean a swapped port rather than a ruined trip. Worth knowing too: 2026 has been a historically quiet Atlantic season, and as of today the hurricane center expects no new storms forming for at least a week.</p>
   </div>
 </section>
 
@@ -428,7 +605,12 @@
         <label><input type="radio" name="pickone" value="Cayo Espanto, Belize"><em>Cayo Espanto, Belize</em></label>
         <label><input type="radio" name="pickone" value="Sandals St. Lucian"><em>Sandals St. Lucian</em></label>
         <label><input type="radio" name="pickone" value="Sandals St. Vincent"><em>Sandals St. Vincent</em></label>
-        <label><input type="radio" name="pickone" value="Wait for the cruise options"><em>Wait, show me the cruises</em></label>
+        <label><input type="radio" name="pickone" value="CRUISE: MSC Seashore"><em>Cruise: MSC Seashore</em></label>
+        <label><input type="radio" name="pickone" value="CRUISE: Utopia of the Seas"><em>Cruise: Utopia of the Seas</em></label>
+        <label><input type="radio" name="pickone" value="CRUISE: Jewel of the Seas"><em>Cruise: Jewel of the Seas</em></label>
+        <label><input type="radio" name="pickone" value="CRUISE: Carnival Glory"><em>Cruise: Carnival Glory</em></label>
+        <label><input type="radio" name="pickone" value="CRUISE: Norwegian Getaway"><em>Cruise: Norwegian Getaway</em></label>
+        <label><input type="radio" name="pickone" value="CRUISE: Disney Destiny"><em>Cruise: Disney Destiny</em></label>
         <label><input type="radio" name="pickone" value="None of these"><em>None of these</em></label>
         <label><input type="radio" name="pickone" value="Still deciding"><em>Still deciding</em></label>
       </div>
