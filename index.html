@@ -190,6 +190,23 @@
   .picked h2{color:#fff;margin:0 0 10px;font-size:28px}
   .picked p{color:#cdeaee;margin:0 0 8px;font-size:16px;font-style:italic}
   .picked .picked-next{font-style:normal;color:#a9d6dd;font-size:14.5px;margin:14px 0 0}
+
+  .todo-hero{background:linear-gradient(150deg,#07303a,#0f6d7d);color:#fff;border-radius:16px;
+    padding:26px 24px;margin:0 0 24px}
+  .todo-hero p{margin:0;color:#daeef1;font-size:16.5px;line-height:1.7}
+  .todo-hero strong{color:#fff}
+  .todo-grid{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:700px){.todo-grid{grid-template-columns:1fr 1fr}}
+  .todo{background:#fff;border:1px solid var(--line);border-radius:13px;padding:18px 18px 20px}
+  .todo h3{margin:0 0 8px;font-size:18px;letter-spacing:-.01em}
+  .todo p{margin:0;font-size:15px;color:#33454a}
+  .todo strong{color:var(--ink)}
+  .chip{display:inline-block;background:var(--sand);color:var(--deep);font-size:11px;
+    font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;
+    border-radius:20px;margin-bottom:10px}
+  .chip-free{background:#e2f3ec;color:var(--good)}
+  .chip-skip{background:#fae6e4;color:var(--bad)}
+  .todo-skip{background:#fffaf9;border-color:#eccfcb}
 </style>
 </head>
 <body>
@@ -213,6 +230,76 @@
 </div>
 
 <div class="wrap">
+
+<section>
+  <div class="sec-head">
+    <span class="sec-num">You asked what there is to do</span>
+    <h2>Two days in the Riviera Maya</h2>
+    <p class="sub">Everything below was checked twice. Prices are per couple. The ones marked included cost nothing extra.</p>
+  </div>
+
+  <div class="todo-hero">
+    <span class="picked-tag">The moment</span>
+    <p>Set an alarm for 6:15 on Friday. <strong>Sunrise is at 6:38</strong> and the pier is completely empty before it. Open the doors onto our own deck, go down our own ladder, and get in the Caribbean while the light comes up. It is 84 degrees in the water. The fish we have been watching through the glass floor since we arrived are right there under us. That is the whole reason to pick this place over anywhere else on the page, and it costs nothing.</p>
+  </div>
+
+  <div class="todo-grid">
+
+    <div class="todo">
+      <span class="chip chip-free">Included</span>
+      <h3>The spa, which you asked about</h3>
+      <p>Naay Spa is a five minute walk, open 8 to 8 every day, and it is indoors so rain does not touch it. <strong>The All &amp; More Inclusive rate covers massages, facials and body scrubs</strong>, so the basic version of what you asked for is already paid for. The upgrade is the hydrotherapy circuit and a clay ritual for two: an hour of sauna, eucalyptus steam, a Scottish shower and hot and cold plunge pools, then a sea salt scrub and a clay wrap. That tier runs about <strong>$400 to $650 for two</strong>. Book it for a rainy afternoon, not a clear morning.</p>
+    </div>
+
+    <div class="todo">
+      <span class="chip chip-free">Included</span>
+      <h3>The Overwater Grill, at the end of our own pier</h3>
+      <p>Palafitos guests get a restaurant nobody else at the resort can use, sitting out over the water at the end of our pier, with private lounges that have <strong>glass floors so you watch the sea underneath you while you eat</strong>. Dinner runs 6 to 10. This is the best fit for a three night trip because it costs us zero travel time. I could not find a published price for a private beach dinner setup, so that is a question for the resort rather than a number I will make up.</p>
+    </div>
+
+    <div class="todo">
+      <span class="chip">$70 to $160</span>
+      <h3>Snorkeling the second largest reef on earth</h3>
+      <p>The Mesoamerican Reef sits about 500 meters off Puerto Morelos, fifteen minutes up the road, so the boat ride is ten minutes instead of an hour. It is a protected national park with a daily cap on how many people go in, which is why it still looks like something. Two drifts of about forty minutes over elkhorn and brain coral. October visibility is usually good because the summer seaweed is receding. Small risk: a north wind can close the park for a day.</p>
+    </div>
+
+    <div class="todo">
+      <span class="chip">$150 to $220</span>
+      <h3>Sunset catamaran, five minutes down the beach</h3>
+      <p>Marina Maroma is right next door, so we walk. Push off around 4:30, sail south with our own bungalow shrinking behind us, and be pointed west when the sun drops around 6:35. <strong>This is the most weather sensitive thing on the list</strong> and sunset sails do cancel for wind in early October, so book it for the first evening rather than the last and keep the other night free.</p>
+    </div>
+
+    <div class="todo">
+      <span class="chip">$120 to $180</span>
+      <h3>A morning in the cenotes</h3>
+      <p>Thirty minutes inland the jungle road opens onto sinkholes of cold, glass clear fresh water, twenty of them along one stretch of highway. At Siete Bocas you go down a wooden stair into a cave and swim between seven openings with stalactites overhead. <strong>Cenotes are groundwater fed, so seaweed and rain do not affect them.</strong> This is the rainy day insurance policy.</p>
+    </div>
+
+    <div class="todo">
+      <span class="chip">$139 to $299</span>
+      <h3>Tulum at the 8 a.m. gate</h3>
+      <p>Grey limestone temples on a low cliff straight above turquoise water, the only walled Maya city built on the coast. About an hour and ten each way. <strong>Go at opening or do not go.</strong> There is almost no shade on the site and by ten it is hot, humid and packed. At eight you get an hour of cool air and empty paths. Figure six to eight hours door to door, so this eats a full day.</p>
+    </div>
+
+    <div class="todo">
+      <span class="chip">$80 to $170</span>
+      <h3>Dinner in Puerto Morelos</h3>
+      <p>A working fishing town of about ten thousand that never got the Playa del Carmen treatment. One small square, a handicrafts market, a crooked lighthouse a 1967 hurricane knocked off plumb that the town decided to leave standing, and seafood places where the catch came in that morning. Fifteen minutes north. October empties it out, which makes it better.</p>
+    </div>
+
+    <div class="todo todo-skip">
+      <span class="chip chip-skip">Skip it</span>
+      <h3>Chichén Itzá</h3>
+      <p>I looked into this properly because it is the thing everyone says you have to do. <strong>The answer is no, not on this trip.</strong> It is three hours each way. The bus tours run twelve to fourteen hours and most build in a jewelry shop stop you cannot skip. And the train does not rescue it: there is no morning departure, the only connection leaves at 7:10 p.m., so we would have to sleep in Valladolid. We have two days. Spending one of them in a van is not the trip.</p>
+    </div>
+
+  </div>
+
+  <div class="fb" style="border-top:0;margin-top:24px">
+    <label for="q-todo">Which of these do you want to actually do?</label>
+    <textarea id="q-todo" data-fb="Things she wants to do" placeholder="Pick as many as you want, or tell me what is missing."></textarea>
+  </div>
+</section>
 
 <section>
   <div class="sec-head">
