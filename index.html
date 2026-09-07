@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dwayne &amp; Qiana &middot; October 2026</title>
+<style>
+  :root{
+    --ink:#0c1a1d; --deep:#07303a; --teal:#0f6d7d; --aqua:#3fb2bb;
+    --paper:#fbf8f4; --sand:#f1e7d9; --gold:#c9a227; --line:#e2d8c9;
+    --muted:#5d6a6d; --good:#1c7a5e; --warn:#a8631b; --bad:#a3322c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%}
+  .wrap{max-width:940px;margin:0 auto;padding:0 20px}
+
+  /* HERO */
+  .hero{background:linear-gradient(165deg,#04222b 0%,#07303a 45%,#0f5f6d 100%);
+    color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:60px;
+    background:radial-gradient(120% 100% at 50% 0,rgba(63,178,187,.30),transparent 70%)}
+  .eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:11px;
+    color:var(--gold);font-weight:700;margin:0 0 14px}
+  .hero h1{margin:0;font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-.02em}
+  .hero .dates{margin:18px 0 0;font-size:19px;color:#bfe4e8;font-weight:500}
+  .hero p{margin:20px 0 0;max-width:56ch;color:#d6e9ec;font-size:16px}
+
+  /* SECTIONS */
+  section{padding:52px 0}
+  .sec-head{border-bottom:2px solid var(--line);padding-bottom:14px;margin-bottom:30px}
+  .sec-num{display:inline-block;background:var(--deep);color:var(--gold);
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
+    padding:5px 11px;border-radius:3px;margin-bottom:12px}
+  h2{margin:0;font-size:29px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin:8px 0 0;font-size:15px}
+
+  /* CARDS */
+  .cards{display:grid;gap:20px;grid-template-columns:1fr}
+  @media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;display:flex;flex-direction:column}
+  .card.pick{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,162,39,.16)}
+  .band{height:104px;position:relative}
+  .band span{position:absolute;left:16px;bottom:12px;color:#fff;font-weight:700;
+    font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    text-shadow:0 1px 8px rgba(0,0,0,.5)}
+  .b1{background:linear-gradient(120deg,#0aa1b0,#5fd6d1 55%,#a9ecd9)}
+  .b2{background:linear-gradient(120deg,#0f7ba8,#3fb6d8 55%,#b6e8f2)}
+  .b3{background:linear-gradient(120deg,#0d6a63,#31a58c 55%,#a8dfbd)}
+  .b4{background:linear-gradient(120deg,#146a86,#37a3bc 55%,#9fdce8)}
+  .b5{background:linear-gradient(120deg,#0b4f63,#1f7f96 60%,#7fc4d4)}
+  .b6{background:linear-gradient(120deg,#125e73,#2f96a8 55%,#96d6e0)}
+  .b7{background:linear-gradient(120deg,#0e5a5f,#2b9a92 55%,#9adcd0)}
+  .b8{background:linear-gradient(120deg,#3a4f63,#6a8296 60%,#b8c7d3)}
+  .body{padding:18px 18px 20px;flex:1;display:flex;flex-direction:column}
+  .badge{display:inline-block;background:var(--gold);color:#2a2000;font-size:10px;
+    font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+    padding:4px 9px;border-radius:3px;margin-bottom:10px}
+  .card h3{margin:0 0 3px;font-size:20px;letter-spacing:-.01em}
+  .prop{color:var(--teal);font-weight:600;font-size:14px;margin:0 0 14px}
+  .facts{list-style:none;margin:0 0 14px;padding:0;font-size:14.5px}
+  .facts li{padding:6px 0;border-bottom:1px dotted var(--line);
+    display:flex;justify-content:space-between;gap:14px}
+  .facts li:last-child{border-bottom:0}
+  .facts b{color:var(--muted);font-weight:600;flex:0 0 auto}
+  .facts span{text-align:right}
+  .price{background:var(--sand);border-radius:9px;padding:11px 14px;margin:0 0 13px}
+  .price .n{font-size:21px;font-weight:700;letter-spacing:-.01em}
+  .price .l{font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--muted);font-weight:700}
+  .note{font-size:14px;margin:0 0 14px;color:#33454a}
+  .note strong{color:var(--ink)}
+  .tag{font-size:12px;font-weight:700;padding:3px 8px;border-radius:20px;
+    display:inline-block;margin:0 6px 6px 0}
+  .t-good{background:#e2f3ec;color:var(--good)}
+  .t-warn{background:#fbeedd;color:var(--warn)}
+  .t-bad{background:#fae6e4;color:var(--bad)}
+  .card a.btn{margin-top:auto;display:block;text-align:center;background:var(--deep);
+    color:#fff;text-decoration:none;padding:11px;border-radius:8px;
+    font-weight:700;font-size:14px}
+  .card a.btn:hover{background:var(--teal)}
+
+  /* TABLE */
+  .scroller{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
+  table{border-collapse:collapse;width:100%;min-width:760px;font-size:14px}
+  th,td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--line);
+    vertical-align:top}
+  thead th{background:var(--deep);color:#fff;font-size:12px;letter-spacing:.06em;
+    text-transform:uppercase;position:sticky;top:0}
+  tbody th{background:var(--sand);font-weight:700;font-size:13px;white-space:nowrap}
+  tr:last-child td,tr:last-child th{border-bottom:0}
+  td.hi{background:#fdf8e9;font-weight:600}
+
+  /* PENDING */
+  .pending{background:#fff;border:2px dashed var(--line);border-radius:14px;
+    padding:34px 24px;text-align:center}
+  .pending h3{margin:0 0 8px;font-size:20px}
+  .pending p{margin:0;color:var(--muted);font-size:15px}
+
+  /* PICK */
+  .pick-box{background:linear-gradient(165deg,#07303a,#0f6d7d);color:#fff;
+    border-radius:16px;padding:34px 26px}
+  .pick-box h2{color:#fff}
+  .pick-box p{color:#cfe8ec;max-width:58ch}
+  .pick-box ol{color:#eaf6f8;padding-left:20px;margin:18px 0 0}
+  .pick-box li{margin:0 0 10px}
+  .pick-box b{color:var(--gold)}
+
+  footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--muted);
+    font-size:13px}
+
+  @media print{
+    body{background:#fff}
+    .hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .card,.scroller,.pick-box{break-inside:avoid;page-break-inside:avoid}
+    section{padding:26px 0}
+    .card a.btn{display:none}
+  }
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+  /* FEEDBACK */
+  .fb{margin:14px 0 0;padding:13px 0 0;border-top:1px dashed var(--line)}
+  .fb label{display:block;font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--muted);font-weight:700;margin:0 0 6px}
+  textarea,input[type=text]{width:100%;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:var(--ink);background:#fffdfa;border:1px solid var(--line);border-radius:9px;
+    padding:10px 12px;resize:vertical;-webkit-appearance:none}
+  textarea:focus,input[type=text]:focus{outline:none;border-color:var(--aqua);
+    box-shadow:0 0 0 3px rgba(63,178,187,.18);background:#fff}
+  textarea{min-height:64px}
+  .fb-sec{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 22px}
+  .fb-sec .q{margin:0 0 22px}
+  .fb-sec .q:last-of-type{margin-bottom:0}
+  .fb-sec .q > label{font-size:15px;letter-spacing:0;text-transform:none;color:var(--ink);
+    font-weight:700;margin-bottom:9px}
+  .fb-sec .q .hint{display:block;font-weight:400;color:var(--muted);font-size:13.5px;margin-top:3px}
+  .choices{display:grid;gap:9px;grid-template-columns:1fr}
+  @media(min-width:620px){.choices{grid-template-columns:1fr 1fr}}
+  .choices label{display:flex;align-items:center;gap:10px;border:1px solid var(--line);
+    border-radius:10px;padding:11px 13px;cursor:pointer;font-size:15px;font-weight:600;
+    letter-spacing:0;text-transform:none;color:var(--ink);margin:0;background:#fffdfa}
+  .choices label:hover{border-color:var(--aqua)}
+  .choices input{accent-color:var(--teal);width:18px;height:18px;flex:0 0 auto}
+  .choices input:checked + em{color:var(--teal)}
+  .choices em{font-style:normal}
+  .choices label:has(input:checked){border-color:var(--teal);background:#f0fafb;
+    box-shadow:0 0 0 2px rgba(15,109,125,.14)}
+  .send{display:grid;gap:10px;grid-template-columns:1fr;margin:26px 0 0}
+  @media(min-width:620px){.send{grid-template-columns:1fr 1fr 1fr}}
+  .send a,.send button{display:block;text-align:center;text-decoration:none;border:0;
+    padding:15px 12px;border-radius:10px;font-weight:800;font-size:15px;cursor:pointer;
+    font-family:inherit;letter-spacing:.01em}
+  .send .primary{background:var(--deep);color:#fff}
+  .send .primary:hover{background:var(--teal)}
+  .send .ghost{background:var(--sand);color:var(--deep);border:1px solid var(--line)}
+  .send .ghost:hover{border-color:var(--teal)}
+  .saved{font-size:13px;color:var(--good);font-weight:700;margin:14px 0 0;
+    opacity:0;transition:opacity .3s}
+  .saved.on{opacity:1}
+  .fb-note{font-size:13.5px;color:var(--muted);margin:16px 0 0;text-align:center}
+  @media print{.fb,.send,.saved{display:none}
+    .fb-sec{border-style:dashed}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Dwayne &amp; Qiana</p>
+    <h1>Where are we<br>waking up?</h1>
+    <p class="dates">Thursday, October 1 &rarr; Sunday, October 4, 2026 &nbsp;&middot;&nbsp; three nights</p>
+    <p>You said overwater bungalow. So I went and found every single one we can actually reach from Chicago in three nights, priced them out, and threw away the ones that don't work. Here they are. Pick one.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <div class="sec-head">
+    <span class="sec-num">Option Set 1</span>
+    <h2>We fly</h2>
+    <p class="sub">Four that fit three nights, and four that look great until you check the flight.</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card pick">
+      <div class="band b1"><span>Riviera Maya &middot; Mexico</span></div>
+      <div class="body">
+        <span class="badge">My pick</span>
+        <h3>Palafitos</h3>
+        <p class="prop">at El Dorado Maroma &middot; adults only</p>
+        <ul class="facts">
+          <li><b>Fly from</b><span>Midway, nonstop</span></li>
+          <li><b>In the air</b><span>3h 40m</span></li>
+          <li><b>Airport to room</b><span>45 to 60 min drive</span></li>
+          <li><b>Door to door</b><span>about 7 hours</span></li>
+          <li><b>All inclusive</b><span>Yes, plus butler</span></li>
+        </ul>
+        <div class="price"><div class="l">Estimated total, all in</div><div class="n">$4,300 to $4,800</div></div>
+        <p class="note">Thirty thatched bungalows on stilts over the water at Maroma Beach. Glass floor panel in the room, your own infinity pool on the deck, outdoor shower, ladder straight down into the sea. <strong>These are the only true overwater bungalows in Mexico.</strong> Leave Midway in the morning, be in the water by afternoon.</p>
+        <span class="tag t-good">Easiest trip</span><span class="tag t-good">Adults only</span><span class="tag t-warn">Seaweed possible</span>
+        <div class="fb"><label for="c-palafitos">Your take</label><textarea id="c-palafitos" data-fb="Palafitos, Riviera Maya" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://www.palafitosmaroma.com/">See the bungalows</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band b2"><span>Aruba</span></div>
+      <div class="body">
+        <h3>Aruba Ocean Villas</h3>
+        <p class="prop">Savaneta &middot; boutique, couples</p>
+        <ul class="facts">
+          <li><b>Fly from</b><span>O'Hare, nonstop</span></li>
+          <li><b>In the air</b><span>about 5h</span></li>
+          <li><b>Airport to room</b><span>20 to 25 min drive</span></li>
+          <li><b>Door to door</b><span>7 to 8 hours</span></li>
+          <li><b>All inclusive</b><span>No, meals extra</span></li>
+        </ul>
+        <div class="price"><div class="l">Estimated total, all in</div><div class="n">$3,500 to $4,200</div></div>
+        <p class="note">Thatched villas over clear shallow water on the quiet south end, far from the high rise strip. Hardwood decks, ladders into the sea. <strong>Aruba sits outside the hurricane belt,</strong> so early October there is just a normal beach week instead of a gamble. Cheapest of the good ones.</p>
+        <span class="tag t-good">Best weather odds</span><span class="tag t-good">Lowest price</span><span class="tag t-warn">O'Hare only</span>
+        <div class="fb"><label for="c-aruba">Your take</label><textarea id="c-aruba" data-fb="Aruba Ocean Villas" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://www.arubaoceanvillas.com/overwater-villas">See the villas</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band b3"><span>Belize</span></div>
+      <div class="body">
+        <h3>Thatch Caye</h3>
+        <p class="prop">a Muy'Ono Resort &middot; private island</p>
+        <ul class="facts">
+          <li><b>Fly from</b><span>O'Hare, likely 1 stop</span></li>
+          <li><b>Then</b><span>Puddle jumper + speedboat</span></li>
+          <li><b>Door to door</b><span>about 12 hours</span></li>
+          <li><b>Usable time</b><span>roughly 1.5 of 3 days</span></li>
+          <li><b>All inclusive</b><span>Yes, transfers too</span></li>
+        </ul>
+        <div class="price"><div class="l">Estimated total, all in</div><div class="n">$3,600 to $6,200</div></div>
+        <p class="note">Fifteen overwater bungalows on a private island inside the barrier reef. Genuinely beautiful, and the one we originally saw. <strong>But October is Belize's wettest month, about ten inches of rain, at the peak of hurricane season,</strong> and reef boat trips get cancelled. This is a February trip, not an October one.</p>
+        <span class="tag t-bad">Worst month</span><span class="tag t-bad">Two travel days</span>
+        <div class="fb"><label for="c-thatch">Your take</label><textarea id="c-thatch" data-fb="Thatch Caye, Belize" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://thatchcayebelize.com/">See the island</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band b4"><span>Bocas del Toro &middot; Panama</span></div>
+      <div class="body">
+        <h3>Azul Paradise</h3>
+        <p class="prop">overwater bungalows on the lagoon</p>
+        <ul class="facts">
+          <li><b>Fly from</b><span>O'Hare + 2nd flight</span></li>
+          <li><b>Then</b><span>Boat to the island</span></li>
+          <li><b>Door to door</b><span>about 14 hours</span></li>
+          <li><b>Usable time</b><span>roughly 1.5 of 3 days</span></li>
+          <li><b>All inclusive</b><span>Yes, on the package</span></li>
+        </ul>
+        <div class="price"><div class="l">Estimated total, all in</div><div class="n">$2,750 to $3,200</div></div>
+        <p class="note">Ten bungalows on stilts over a turquoise lagoon, glass floor panel, private sundeck, hammock hanging over the water. <strong>By far the cheapest real overwater bungalow on this list.</strong> The catch is two of our three days go to airports, and the vibe is rustic barefoot rather than luxury.</p>
+        <span class="tag t-good">Cheapest overall</span><span class="tag t-warn">Rustic</span><span class="tag t-bad">Two travel days</span>
+        <div class="fb"><label for="c-azul">Your take</label><textarea id="c-azul" data-fb="Azul Paradise, Panama" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://azulparadise.com/villas-and-bungalows/">See the bungalows</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band b5"><span>Belize &middot; premium</span></div>
+      <div class="body">
+        <h3>Cayo Espanto</h3>
+        <p class="prop">Casa Ventanas &middot; private island, 7 villas</p>
+        <ul class="facts">
+          <li><b>Door to door</b><span>about 12 hours</span></li>
+          <li><b>All inclusive</b><span>Yes, private butler</span></li>
+          <li><b>Included</b><span>3 meals, drinks, sailboat</span></li>
+          <li><b>Extra charges</b><span>9% tax + 15% island fee</span></li>
+        </ul>
+        <div class="price"><div class="l">Estimated total, all in</div><div class="n">$11,500 to $14,000</div></div>
+        <p class="note">A bungalow floating at the end of a 150 foot dock with its own butler and sailboat. Honestly <strong>the best property on this entire page.</strong> It is also the worst possible month to go, so my advice is to keep this one in our back pocket for February or March and give it five or six nights instead of three.</p>
+        <span class="tag t-good">Most special</span><span class="tag t-bad">Wrong month</span>
+        <div class="fb"><label for="c-cayo">Your take</label><textarea id="c-cayo" data-fb="Cayo Espanto, Belize" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://aprivateisland.com/rates/">See the island</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band b6"><span>St. Lucia</span></div>
+      <div class="body">
+        <h3>Sandals Grande St. Lucian</h3>
+        <p class="prop">over the water butler bungalows</p>
+        <ul class="facts">
+          <li><b>Fly from</b><span>No October nonstop</span></li>
+          <li><b>Door to door</b><span>9 to 10 hours</span></li>
+          <li><b>All inclusive</b><span>Yes, plus 3 resorts</span></li>
+          <li><b>Adults only</b><span>Yes</span></li>
+        </ul>
+        <div class="price"><div class="l">Estimated total, all in</div><div class="n">$7,100 to $7,900</div></div>
+        <p class="note">Beautiful bungalows and you get run of three Sandals resorts on the island. <strong>The problem is purely arithmetic:</strong> with a connection each way, two of our three days become travel days. Worth it for a week. Not worth it for three nights.</p>
+        <span class="tag t-good">Full butler</span><span class="tag t-bad">Bad flight math</span>
+        <div class="fb"><label for="c-stlucia">Your take</label><textarea id="c-stlucia" data-fb="Sandals St. Lucian" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://www.sandals.com/grande-st-lucian/">See the resort</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band b7"><span>St. Vincent</span></div>
+      <div class="body">
+        <h3>Sandals Saint Vincent</h3>
+        <p class="prop">two story overwater villas</p>
+        <ul class="facts">
+          <li><b>Fly from</b><span>No nonstop, usually 2 stops</span></li>
+          <li><b>Door to door</b><span>12 to 14 hours</span></li>
+          <li><b>All inclusive</b><span>Yes</span></li>
+          <li><b>Adults only</b><span>Yes</span></li>
+        </ul>
+        <div class="price"><div class="l">Estimated total, all in</div><div class="n">$11,500 to $13,500</div></div>
+        <p class="note">The newest and arguably the nicest overwater villas Sandals has built, two full stories out over the water. <strong>Also the hardest to get to on the whole list.</strong> Two connections each way means we would spend more time in airports than in the villa.</p>
+        <span class="tag t-good">Newest villas</span><span class="tag t-bad">Two full travel days</span>
+        <div class="fb"><label for="c-stvincent">Your take</label><textarea id="c-stvincent" data-fb="Sandals St. Vincent" placeholder="Yes, no, maybe. Anything."></textarea></div>
+        <a class="btn" href="https://www.sandals.com/saint-vincent/">See the resort</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="band b8"><span>Jamaica</span></div>
+      <div class="body">
+        <h3>Sandals Jamaica</h3>
+        <p class="prop">Royal Caribbean &amp; South Coast</p>
+        <ul class="facts">
+          <li><b>Fly from</b><span>Midway route is Nov to Apr</span></li>
+          <li><b>Status</b><span>Closed / renovating</span></li>
+          <li><b>Reopens</b><span>December 18, 2026</span></li>
+        </ul>
+        <div class="price"><div class="l">Availability</div><div class="n">Not an option</div></div>
+        <p class="note">Including it so you know I checked. <strong>Royal Caribbean is closed until December 18, 2026</strong> and reopening under a new name, South Coast is mid way through a $200M rebuild after Hurricane Melissa, and the Midway to Montego Bay flight is a winter only route that does not run in October. Three strikes.</p>
+        <span class="tag t-bad">Unavailable</span>
+        <a class="btn" href="https://www.sandals.com/">Sandals</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="sec-num">Side by side</span>
+    <h2>The numbers, if you want them</h2>
+    <p class="sub">Swipe sideways on your phone. Gold column is my pick.</p>
+  </div>
+  <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Riviera Maya</th>
+          <th>Aruba</th>
+          <th>Belize</th>
+          <th>Panama</th>
+          <th>St. Lucia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th>Property</th><td class="hi">Palafitos</td><td>Aruba Ocean Villas</td><td>Thatch Caye</td><td>Azul Paradise</td><td>Sandals Grande</td></tr>
+        <tr><th>Fly out of</th><td class="hi">Midway, nonstop</td><td>O'Hare, nonstop</td><td>O'Hare, 1 stop</td><td>O'Hare, 2 flights</td><td>O'Hare, 1 stop</td></tr>
+        <tr><th>Time in the air</th><td class="hi">3h 40m</td><td>about 5h</td><td>4h 22m to 7h</td><td>6h 30m plus boat</td><td>7h plus connection</td></tr>
+        <tr><th>Door to door</th><td class="hi">about 7 hours</td><td>7 to 8 hours</td><td>about 12 hours</td><td>about 14 hours</td><td>9 to 10 hours</td></tr>
+        <tr><th>Usable time</th><td class="hi">nearly all 3 days</td><td>nearly all 3 days</td><td>about 1.5 days</td><td>about 1.5 days</td><td>about 1.5 days</td></tr>
+        <tr><th>Per night</th><td class="hi">$1,100 to $1,250</td><td>$549 to $1,579</td><td>$600 to $1,200</td><td>$375 to $450</td><td>$1,900 to $2,022</td></tr>
+        <tr><th>All inclusive</th><td class="hi">Yes, plus butler</td><td>No</td><td>Yes</td><td>Yes, on package</td><td>Yes, plus butler</td></tr>
+        <tr><th>Flights for two</th><td class="hi">about $800</td><td>$1,000 to $1,400</td><td>$1,200 to $1,600</td><td>$1,400 to $1,800</td><td>$1,400 to $1,800</td></tr>
+        <tr><th>Total, 3 nights</th><td class="hi">$4,300 to $4,800</td><td>$3,500 to $4,200</td><td>$3,600 to $6,200</td><td>$2,750 to $3,200</td><td>$7,100 to $7,900</td></tr>
+        <tr><th>Early Oct weather</th><td class="hi">Rain fading</td><td>Dry, 82 to 88&deg;F</td><td>Wettest month</td><td>Wet season</td><td>Rainy season</td></tr>
+        <tr><th>Hurricane risk</th><td class="hi">Moderate, falling</td><td>Essentially none</td><td>Peak</td><td>Outside the belt</td><td>Moderate</td></tr>
+        <tr><th>Adults only</th><td class="hi">Yes</td><td>Couples focused</td><td>No</td><td>No</td><td>Yes</td></tr>
+        <tr><th>The catch</th><td class="hi">Seaweed is possible</td><td>Meals not included</td><td>Wrong month entirely</td><td>Two travel days</td><td>Two travel days</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="sec-num">Option Set 2</span>
+    <h2>We cruise</h2>
+    <p class="sub">Same treatment, same honesty, still being researched.</p>
+  </div>
+  <div class="pending">
+    <h3>Cruise options are still being pulled</h3>
+    <p>I have eight researchers working through the October 2026 sailing calendars, the Chicago flights to each port, hurricane rerouting policies, and the true all in cost per couple. Including whether we can book an overwater cabana on a private island as a day. This section fills in shortly.</p>
+  </div>
+</section>
+
+<section>
+  <div class="pick-box">
+    <h2>So, pick one</h2>
+    <p>You do not have to weigh all of that. Here is the short version, in the order I would choose.</p>
+    <ol>
+      <li><b>Riviera Maya.</b> If the experience is the point. Only one where we leave Midway in the morning and are in the water that afternoon.</li>
+      <li><b>Aruba.</b> If you want zero weather anxiety. Outside the hurricane belt, cheapest of the good ones, we just pay for our own dinners.</li>
+      <li><b>Panama.</b> If price is the point and you do not mind roughing the travel.</li>
+      <li><b>Cayo Espanto.</b> Not now. Let's save this one and do it right in February.</li>
+    </ol>
+    <p style="margin-top:20px"><b>Say a name and I will book it.</b></p>
+  </div>
+</section>
+
+
+<section>
+  <div class="sec-head">
+    <span class="sec-num">Your turn</span>
+    <h2>Tell me what you think</h2>
+    <p class="sub">Type wherever you want. It saves as you go, so you can close this and come back.</p>
+  </div>
+
+  <div class="fb-sec">
+
+    <div class="q">
+      <label>Which one are you drawn to?</label>
+      <div class="choices">
+        <label><input type="radio" name="pickone" value="Palafitos, Riviera Maya"><em>Palafitos, Riviera Maya</em></label>
+        <label><input type="radio" name="pickone" value="Aruba Ocean Villas"><em>Aruba Ocean Villas</em></label>
+        <label><input type="radio" name="pickone" value="Thatch Caye, Belize"><em>Thatch Caye, Belize</em></label>
+        <label><input type="radio" name="pickone" value="Azul Paradise, Panama"><em>Azul Paradise, Panama</em></label>
+        <label><input type="radio" name="pickone" value="Cayo Espanto, Belize"><em>Cayo Espanto, Belize</em></label>
+        <label><input type="radio" name="pickone" value="Sandals St. Lucian"><em>Sandals St. Lucian</em></label>
+        <label><input type="radio" name="pickone" value="Sandals St. Vincent"><em>Sandals St. Vincent</em></label>
+        <label><input type="radio" name="pickone" value="Wait for the cruise options"><em>Wait, show me the cruises</em></label>
+        <label><input type="radio" name="pickone" value="None of these"><em>None of these</em></label>
+        <label><input type="radio" name="pickone" value="Still deciding"><em>Still deciding</em></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label for="q-why">What made you pick that one?
+        <span class="hint">Or what is making it hard to pick.</span></label>
+      <textarea id="q-why" data-fb="Why that one"></textarea>
+    </div>
+
+    <div class="q">
+      <label for="q-perfect">What would make it perfect?
+        <span class="hint">A dinner, a spa day, a room upgrade, a photographer, anything.</span></label>
+      <textarea id="q-perfect" data-fb="What would make it perfect"></textarea>
+    </div>
+
+    <div class="q">
+      <label for="q-deal">Is anything a dealbreaker?
+        <span class="hint">Long flights, connections, rain risk, no seaweed, whatever it is. Say it now.</span></label>
+      <textarea id="q-deal" data-fb="Dealbreakers"></textarea>
+    </div>
+
+    <div class="q">
+      <label>How do you feel about the money?</label>
+      <div class="choices">
+        <label><input type="radio" name="budget" value="Spend what it takes"><em>Spend what it takes</em></label>
+        <label><input type="radio" name="budget" value="The range shown is fine"><em>The range shown is fine</em></label>
+        <label><input type="radio" name="budget" value="Let us keep it tighter"><em>Let us keep it tighter</em></label>
+        <label><input type="radio" name="budget" value="Want to talk about it"><em>Want to talk about it</em></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label for="q-dates">Are the dates right?
+        <span class="hint">October 1 to 4. Could we leave a day earlier or come back a day later?</span></label>
+      <textarea id="q-dates" data-fb="Dates"></textarea>
+    </div>
+
+    <div class="q">
+      <label for="q-else">Anything else on your mind?</label>
+      <textarea id="q-else" data-fb="Anything else"></textarea>
+    </div>
+
+    <div class="send">
+      <a class="primary" id="btn-text" href="#">Text it to Dwayne</a>
+      <a class="ghost" id="btn-mail" href="#">Email it</a>
+      <button class="ghost" id="btn-copy" type="button">Copy my notes</button>
+    </div>
+    <p class="saved" id="saved">Saved</p>
+    <p class="fb-note">Nothing sends until you tap one of those. Your answers stay on your phone until then.</p>
+
+  </div>
+</section>
+
+<footer>
+  <p>Prices are published ranges and October averages, not live quotes for our exact dates, so the final number will move a little. Both passports are current, so nothing is blocking us. Palafitos has only thirty bungalows and we are about three and a half weeks out, so whichever way you lean, sooner is better.</p>
+  <p>Put together September 6, 2026.</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var KEY = 'anniv2026.';
+  var fields = [].slice.call(document.querySelectorAll('textarea[data-fb]'));
+  var radios = [].slice.call(document.querySelectorAll('input[type=radio]'));
+  var savedEl = document.getElementById('saved');
+  var timer = null;
+
+  function flash(){
+    if(!savedEl) return;
+    savedEl.classList.add('on');
+    clearTimeout(timer);
+    timer = setTimeout(function(){ savedEl.classList.remove('on'); }, 1400);
+  }
+  function put(k,v){ try{ localStorage.setItem(KEY+k, v); }catch(e){} }
+  function get(k){ try{ return localStorage.getItem(KEY+k) || ''; }catch(e){ return ''; } }
+
+  // restore
+  fields.forEach(function(el){ var v = get(el.id); if(v) el.value = v; });
+  radios.forEach(function(r){ if(get(r.name) === r.value) r.checked = true; });
+
+  // save
+  fields.forEach(function(el){
+    el.addEventListener('input', function(){ put(el.id, el.value); flash(); });
+  });
+  radios.forEach(function(r){
+    r.addEventListener('change', function(){ if(r.checked){ put(r.name, r.value); flash(); } });
+  });
+
+  function compose(){
+    var out = ['My notes on the October trip', ''];
+    var pick = get('pickone');
+    if(pick) out.push('I am drawn to: ' + pick);
+    var budget = get('budget');
+    if(budget) out.push('On the money: ' + budget);
+    if(pick || budget) out.push('');
+
+    var main = [], cards = [];
+    fields.forEach(function(el){
+      var v = (el.value || '').trim();
+      if(!v) return;
+      var line = el.getAttribute('data-fb') + ': ' + v;
+      (el.id.indexOf('c-') === 0 ? cards : main).push(line);
+    });
+    main.forEach(function(l){ out.push(l); out.push(''); });
+    if(cards.length){
+      out.push('On the individual options:');
+      cards.forEach(function(l){ out.push('  ' + l); });
+      out.push('');
+    }
+    if(out.length <= 2) out.push('(nothing filled in yet)');
+    return out.join('\n');
+  }
+
+  var textBtn = document.getElementById('btn-text');
+  var mailBtn = document.getElementById('btn-mail');
+  var copyBtn = document.getElementById('btn-copy');
+
+  if(textBtn) textBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    window.location.href = 'sms:&body=' + encodeURIComponent(compose());
+  });
+  if(mailBtn) mailBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    window.location.href = 'mailto:?subject=' + encodeURIComponent('My notes on the October trip') +
+      '&body=' + encodeURIComponent(compose());
+  });
+  if(copyBtn) copyBtn.addEventListener('click', function(){
+    var txt = compose();
+    var done = function(){
+      var old = copyBtn.textContent;
+      copyBtn.textContent = 'Copied';
+      setTimeout(function(){ copyBtn.textContent = old; }, 1600);
+    };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(done, function(){ fallback(txt, done); });
+    } else { fallback(txt, done); }
+  });
+  function fallback(txt, done){
+    var ta = document.createElement('textarea');
+    ta.value = txt; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); done(); }catch(e){}
+    document.body.removeChild(ta);
+  }
+})();
+</script>
+</body>
+</html>
